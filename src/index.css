@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+/* ─── Global Font ─────────────────────────────── */
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ─── Custom transition durations ───────────── */
+.duration-350 { transition-duration: 350ms; }
+.duration-400 { transition-duration: 400ms; }
+
+/* ─── Custom Scrollbar ───────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #e67e22;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d35400;
+}
+
+/* ─── Hero Section Background ─────────────────── */
+.hero-section {
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/* ─── Pulse Glow Animation ───────────────────── */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(230, 126, 34, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(230, 126, 34, 0);
+  }
+}
+.pulse-glow {
+  animation: pulse-glow 2.4s ease-in-out infinite;
+}
+
+/* ─── Floating Subtle Shape ─────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+.float-anim {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* ─── Gradient Text ─────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #e67e22, #f39c12);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Section heading underline accent ─────── */
+.section-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: rgba(230, 126, 34, 0.12);
+  color: #e67e22;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* ─── Hero overlay ──────────────────────────── */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 20, 40, 0.82) 0%,
+    rgba(30, 20, 10, 0.70) 100%
+  );
+}
+
+/* ─── Card shine effect ─────────────────────── */
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+.card-shine::before {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255,255,255,0.06) 50%,
+    transparent 60%
+  );
+  transform: rotate(25deg);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+.card-shine:hover::before {
+  left: 130%;
+}
+
+/* ─── Step connector line ─────────────────── */
+.step-line {
+  background: linear-gradient(90deg, #e67e22, #f39c12);
+}
+
+/* ─── Glassmorphism nav ──────────────────── */
+.glass-nav {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid rgba(230, 126, 34, 0.12);
+}
+
+/* ─── Mobile menu animation ─────────────── */
+.mobile-menu-enter {
+  transform-origin: top;
+  animation: menuSlide 0.25s ease forwards;
+}
+@keyframes menuSlide {
+  from { opacity: 0; transform: scaleY(0.92) translateY(-6px); }
+  to   { opacity: 1; transform: scaleY(1) translateY(0); }
+}
+
+/* ─── Orange decorative divider ─────────── */
+.orange-divider {
+  width: 52px;
+  height: 4px;
+  background: linear-gradient(90deg, #e67e22, #f39c12);
+  border-radius: 2px;
+  margin: 16px auto 0;
+}
+.orange-divider-left {
+  margin: 16px 0 0;
+}
