@@ -1,6 +1,10 @@
 /**
  * About Us Section
+<<<<<<< HEAD
  * - Two-column layout: text + image & decorative visual
+=======
+ * - Two-column layout: text + decorative visual
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
  * - Framer Motion whileInView animations
  */
 import { motion, type Variants } from 'framer-motion';
@@ -27,7 +31,11 @@ export default function About() {
       <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-slate-100 blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<<<<<<< HEAD
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+=======
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
 
           {/* ── Left: Text Content ── */}
           <motion.div
@@ -36,6 +44,7 @@ export default function About() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
+<<<<<<< HEAD
             <span className="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-orange-600 font-bold text-sm tracking-wide mb-4">
               ABOUT US
             </span>
@@ -43,6 +52,14 @@ export default function About() {
               Navigating Immigration<br />
               <span className="text-orange-500">Made Simple for You</span>
             </h2>
+=======
+            <span className="section-badge">About Us</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mt-3 mb-2">
+              Navigating Immigration<br />
+              <span className="gradient-text">Made Simple for You</span>
+            </h2>
+            <div className="orange-divider orange-divider-left mb-6" />
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
 
             <p className="text-slate-600 text-lg leading-relaxed mb-6">
               Led by Proprietor{' '}
@@ -85,12 +102,17 @@ export default function About() {
             </div>
           </motion.div>
 
+<<<<<<< HEAD
           {/* ── Right: Image & Decorative card grid ── */}
+=======
+          {/* ── Right: Decorative card grid ── */}
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, delay: 0.15 }}
+<<<<<<< HEAD
             className="relative flex flex-col gap-6"
           >
             
@@ -113,6 +135,10 @@ export default function About() {
             </div>
 
             {/* 2. Stats Grid (Already irundha Cards) */}
+=======
+            className="relative"
+          >
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
             <div className="grid grid-cols-2 gap-5">
               {/* Card 1 */}
               <motion.div
@@ -142,7 +168,11 @@ export default function About() {
                 <p className="text-sm text-slate-400 mt-1 font-medium">Service Categories</p>
               </motion.div>
 
+<<<<<<< HEAD
               {/* Card 3 (Location) */}
+=======
+              {/* Card 3 */}
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
               <motion.div
                 variants={cardVariants}
                 initial="hidden"
@@ -166,9 +196,23 @@ export default function About() {
               </motion.div>
             </div>
 
+<<<<<<< HEAD
+=======
+            {/* Floating badge */}
+            <div className="absolute -top-5 -right-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-slate-100">
+              <div className="flex items-center gap-2">
+                <div className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
+                <span className="text-xs font-bold text-slate-700">Available 24/7</span>
+              </div>
+            </div>
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
           </motion.div>
         </div>
       </div>
     </section>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b

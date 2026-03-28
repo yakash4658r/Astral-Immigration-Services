@@ -4,38 +4,65 @@
  * - Framer Motion whileInView stagger
  */
 import { motion, type Variants } from 'framer-motion';
+<<<<<<< HEAD
 // Lucide icons theva illa ippo, aana vera edhavadhu use panna import vachikonga
 // import { Zap, BookOpen, HeartHandshake, Eye, LayoutGrid } from 'lucide-react';
 
 interface Reason {
   image: string; // Icon-kku badhila image path add pannirukom
+=======
+import { Zap, BookOpen, HeartHandshake, Eye, LayoutGrid } from 'lucide-react';
+
+interface Reason {
+  icon: React.ReactNode;
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
   title: string;
   desc: string;
 }
 
 const reasons: Reason[] = [
   {
+<<<<<<< HEAD
     image: 'images/reason1.png', // Fast Processing image
+=======
+    icon: <Zap className="w-6 h-6" />,
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
     title: 'Fast & Reliable Processing',
     desc: 'We prioritize speed without compromising accuracy. Your applications are handled with urgency and diligence.',
   },
   {
+<<<<<<< HEAD
     image: 'images/reason2.png', // Documentation image
+=======
+    icon: <BookOpen className="w-6 h-6" />,
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
     title: 'Expert Documentation Guidance',
     desc: 'Our team ensures every document is perfectly prepared, reducing errors and rejection risks significantly.',
   },
   {
+<<<<<<< HEAD
     image: 'images/reason3.png', // Support/Handshake image
+=======
+    icon: <HeartHandshake className="w-6 h-6" />,
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
     title: 'Personalized Customer Support',
     desc: 'We assign dedicated support for each client — you are never just a ticket number to us.',
   },
   {
+<<<<<<< HEAD
     image: 'images/reason4.png', // Transparency/Trust image
+=======
+    icon: <Eye className="w-6 h-6" />,
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
     title: 'Transparent & Trustworthy',
     desc: 'No hidden fees. No false promises. We maintain complete transparency throughout the process.',
   },
   {
+<<<<<<< HEAD
     image: 'images/reason5.png', // Compliance/Grid image
+=======
+    icon: <LayoutGrid className="w-6 h-6" />,
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
     title: 'One-Stop Compliance Solution',
     desc: 'From visas to tax filings and legal documentation — handle everything in one trusted place.',
   },
@@ -58,6 +85,7 @@ function ReasonCard({ reason, index }: { reason: Reason; index: number }) {
       {/* Glow on hover */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
+<<<<<<< HEAD
       {/* ── UPDATED IMAGE CONTAINER (Bigger Size & Zoomed Image) ── */}
       <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-6 overflow-hidden relative group-hover:border-orange-300 group-hover:shadow-md transition-all duration-300 z-10">
         <img 
@@ -70,6 +98,15 @@ function ReasonCard({ reason, index }: { reason: Reason; index: number }) {
 
       {/* Background number */}
       <span className="absolute top-5 right-6 text-5xl font-extrabold text-slate-100 group-hover:text-orange-50 transition-colors duration-300 select-none leading-none z-0">
+=======
+      {/* Icon */}
+      <div className="w-12 h-12 rounded-xl bg-white group-hover:bg-orange-500 border border-slate-200 group-hover:border-orange-500 shadow-sm flex items-center justify-center text-slate-500 group-hover:text-white transition-all duration-300 mb-5">
+        {reason.icon}
+      </div>
+
+      {/* Background number */}
+      <span className="absolute top-5 right-6 text-5xl font-extrabold text-slate-100 group-hover:text-orange-50 transition-colors duration-300 select-none leading-none">
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
         {String(index + 1).padStart(2, '0')}
       </span>
 
@@ -134,4 +171,8 @@ export default function WhyChooseUs() {
       </div>
     </section>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ec746734adc4554fca8f52a78d1505292564987b
