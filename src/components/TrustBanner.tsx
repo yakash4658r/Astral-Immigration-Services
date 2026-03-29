@@ -16,7 +16,8 @@ const testimonials = [
  
     // Pudhusa image path add pannirukkom
     image: 'images/client1.jpg', 
-     initials: 'RK',
+ 
+    initials: 'RK',
     bg: 'from-orange-400 to-orange-600',
    },
   {
@@ -27,7 +28,8 @@ const testimonials = [
  
     // Pudhusa image path add pannirukkom
     image: 'images/client2.jpg', 
-     initials: 'PC',
+ 
+    initials: 'PC',
     bg: 'from-slate-600 to-slate-800',
    },
   {
@@ -38,7 +40,8 @@ const testimonials = [
  
     // Pudhusa image path add pannirukkom
     image: 'images/client3.jpg', 
-     initials: 'AM',
+ 
+    initials: 'AM',
     bg: 'from-amber-500 to-orange-500',
    },
 ];
@@ -121,7 +124,8 @@ export default function TrustBanner() {
                   className="w-11 h-11 rounded-full object-cover shrink-0 border-2 border-orange-100 shadow-sm"
                 />
                 
-                 <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.bg} flex items-center justify-center text-white text-sm font-bold shrink-0`}>
+ 
+                <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.bg} flex items-center justify-center text-white text-sm font-bold shrink-0`}>
                   {t.initials}
                 </div>
                  <div>
@@ -161,5 +165,6 @@ export default function TrustBanner() {
   );
  
 }
- }
+ 
+}
  

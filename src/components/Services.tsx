@@ -2,7 +2,8 @@
  * Services Section
  
  * - Premium CSS Grid cards with hover lift + conditionally rendered images
-  * - Premium CSS Grid cards with hover lift + icon color transition
+ 
+ * - Premium CSS Grid cards with hover lift + icon color transition
   * - Framer Motion stagger animation
  */
 import { motion, type Variants } from 'framer-motion';
@@ -20,7 +21,8 @@ interface Service {
   bg: string;
  
   image?: string; // புதுசா இமேஜ் ஆட் பண்ணிருக்கோம்
-  }
+ 
+ }
 
 const services: Service[] = [
   {
@@ -32,7 +34,8 @@ const services: Service[] = [
     bg: 'bg-sky-50',
  
     image: 'public/images/visa.jpg' // Image 1
-    },
+ 
+   },
   {
     icon: <UserCheck className="w-7 h-7" />,
     category: 'FRRO & Expat',
@@ -42,7 +45,8 @@ const services: Service[] = [
     bg: 'bg-violet-50',
  
     image: 'public/images/frro.jpg' // Image 2
-    },
+ 
+   },
   {
     icon: <CreditCard className="w-7 h-7" />,
     category: 'Passport & ID',
@@ -52,7 +56,8 @@ const services: Service[] = [
     bg: 'bg-emerald-50',
  
     image: 'public/images/passport.jpg' // Image 3
-    },
+ 
+   },
   {
     icon: <Building2 className="w-7 h-7" />,
     category: 'Business & Tax',
@@ -62,7 +67,8 @@ const services: Service[] = [
     bg: 'bg-amber-50',
  
     image: 'public/images/Business & Tax.jpg' // Image 4 (Placeholder, can be updated with a more relevant image)
-    },
+ 
+   },
   {
     icon: <Truck className="w-7 h-7" />,
     category: 'Import / Export',
@@ -72,7 +78,8 @@ const services: Service[] = [
     bg: 'bg-blue-50',
  
     image: 'public/images/Import&Export.jpg'  // Image 5
-    },
+ 
+   },
   {
     icon: <Scale className="w-7 h-7" />,
     category: 'Legal',
@@ -82,7 +89,8 @@ const services: Service[] = [
     bg: 'bg-rose-50',
  
     image: 'public/images/Legal & Notary Services.jpg'  // Image 6
-    },
+ 
+   },
 ];
 
 const containerVariants: Variants = {
@@ -118,7 +126,8 @@ export default function Services() {
           </h2>
  
           <div className="orange-divider mx-auto" />
-           <div className="orange-divider" />
+ 
+          <div className="orange-divider" />
            <p className="text-slate-500 max-w-2xl mx-auto mt-5 text-lg">
             From visa assistance to business compliance — we handle it all under one roof,
             with expert care and precision.
@@ -133,7 +142,8 @@ export default function Services() {
           viewport={{ once: true, margin: '-50px' }}
  
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 items-start"
-           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7"
+ 
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7"
          >
           {services.map((svc, i) => (
             <motion.div
@@ -187,7 +197,8 @@ export default function Services() {
                 {/* Bottom accent line */}
                 <div className="mt-auto h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-orange-500 to-orange-300 rounded-full transition-all duration-500" />
               </div>
-               className="card-shine group bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-350 cursor-default"
+ 
+              className="card-shine group bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-350 cursor-default"
             >
               {/* Icon */}
               <div className={`w-14 h-14 rounded-2xl ${svc.bg} flex items-center justify-center mb-5 transition-all duration-300 group-hover:bg-orange-100`}>
@@ -252,5 +263,6 @@ export default function Services() {
   );
  
 }
- }
+ 
+}
  

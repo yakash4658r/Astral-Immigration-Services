@@ -10,7 +10,8 @@ import { motion, type Variants } from 'framer-motion';
 
 interface Reason {
   image: string; // Icon-kku badhila image path add pannirukom
- import { Zap, BookOpen, HeartHandshake, Eye, LayoutGrid } from 'lucide-react';
+ 
+import { Zap, BookOpen, HeartHandshake, Eye, LayoutGrid } from 'lucide-react';
 
 interface Reason {
   icon: React.ReactNode;
@@ -22,35 +23,40 @@ const reasons: Reason[] = [
   {
  
     image: 'images/reason1.png', // Fast Processing image
-     icon: <Zap className="w-6 h-6" />,
+ 
+    icon: <Zap className="w-6 h-6" />,
      title: 'Fast & Reliable Processing',
     desc: 'We prioritize speed without compromising accuracy. Your applications are handled with urgency and diligence.',
   },
   {
  
     image: 'images/reason2.png', // Documentation image
-     icon: <BookOpen className="w-6 h-6" />,
+ 
+    icon: <BookOpen className="w-6 h-6" />,
      title: 'Expert Documentation Guidance',
     desc: 'Our team ensures every document is perfectly prepared, reducing errors and rejection risks significantly.',
   },
   {
  
     image: 'images/reason3.png', // Support/Handshake image
-     icon: <HeartHandshake className="w-6 h-6" />,
+ 
+    icon: <HeartHandshake className="w-6 h-6" />,
      title: 'Personalized Customer Support',
     desc: 'We assign dedicated support for each client — you are never just a ticket number to us.',
   },
   {
  
     image: 'images/reason4.png', // Transparency/Trust image
-     icon: <Eye className="w-6 h-6" />,
+ 
+    icon: <Eye className="w-6 h-6" />,
      title: 'Transparent & Trustworthy',
     desc: 'No hidden fees. No false promises. We maintain complete transparency throughout the process.',
   },
   {
  
     image: 'images/reason5.png', // Compliance/Grid image
-     icon: <LayoutGrid className="w-6 h-6" />,
+ 
+    icon: <LayoutGrid className="w-6 h-6" />,
      title: 'One-Stop Compliance Solution',
     desc: 'From visas to tax filings and legal documentation — handle everything in one trusted place.',
   },
@@ -86,7 +92,8 @@ function ReasonCard({ reason, index }: { reason: Reason; index: number }) {
 
       {/* Background number */}
       <span className="absolute top-5 right-6 text-5xl font-extrabold text-slate-100 group-hover:text-orange-50 transition-colors duration-300 select-none leading-none z-0">
-       {/* Icon */}
+ 
+      {/* Icon */}
       <div className="w-12 h-12 rounded-xl bg-white group-hover:bg-orange-500 border border-slate-200 group-hover:border-orange-500 shadow-sm flex items-center justify-center text-slate-500 group-hover:text-white transition-all duration-300 mb-5">
         {reason.icon}
       </div>
@@ -159,5 +166,6 @@ export default function WhyChooseUs() {
   );
  
 }
- }
+ 
+}
  

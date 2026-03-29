@@ -63,7 +63,8 @@ export default function Navbar() {
           <img src="Logo.png" alt="Astral Logo" className="w-30 h-20 object-contain" />
             <div className="flex flex-col leading-tight">
               <span className={`text-4xl font-800 tracking-tight transition-colors duration-300 ${
-             <div className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all duration-300 ${
+ 
+            <div className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all duration-300 ${
               scrolled ? 'bg-orange-500' : 'bg-orange-500/90'
             } group-hover:scale-105`}>
               <Globe className="w-5 h-5 text-white" strokeWidth={2} />
@@ -76,7 +77,8 @@ export default function Navbar() {
               </span>
  
               <span className={`text-base font-500 tracking-widest uppercase transition-colors duration-300 ${
-               <span className={`text-[10px] font-500 tracking-widest uppercase transition-colors duration-300 ${
+ 
+              <span className={`text-[10px] font-500 tracking-widest uppercase transition-colors duration-300 ${
                  scrolled ? 'text-slate-500' : 'text-white/70'
               }`}>
                 Services

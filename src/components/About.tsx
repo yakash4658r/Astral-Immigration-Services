@@ -1,6 +1,10 @@
 /**
  * About Us Section
- * - Framer Motion whileInView animations
+ 
+ * - Two-column layout: text + image & decorative visual
+ 
+ * - Two-column layout: text + decorative visual
+  * - Framer Motion whileInView animations
  */
 import { motion, type Variants } from 'framer-motion';
 import { MapPin, Award, Briefcase, CheckCircle2 } from 'lucide-react';
@@ -26,9 +30,11 @@ export default function About() {
       <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-slate-100 blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-         <div className="grid lg:grid-cols-2 gap-16 items-center">
-
+ 
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+ 
           {/* ── Left: Text Content ── */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -36,6 +42,7 @@ export default function About() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
+ 
             <span className="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-orange-600 font-bold text-sm tracking-wide mb-4">
               ABOUT US
             </span>
@@ -43,13 +50,14 @@ export default function About() {
               Navigating Immigration<br />
               <span className="text-orange-500">Made Simple for You</span>
             </h2>
+ 
             <span className="section-badge">About Us</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mt-3 mb-2">
               Navigating Immigration<br />
               <span className="gradient-text">Made Simple for You</span>
             </h2>
             <div className="orange-divider orange-divider-left mb-6" />
-
+ 
             <p className="text-slate-600 text-lg leading-relaxed mb-6">
               Led by Proprietor{' '}
               <span className="font-bold text-slate-800">Nivedha Sajeev</span>, Astral Immigration
@@ -91,13 +99,16 @@ export default function About() {
             </div>
           </motion.div>
 
+ 
           {/* ── Right: Image & Decorative card grid ── */}
+ 
           {/* ── Right: Decorative card grid ── */}
-          <motion.div
+           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, delay: 0.15 }}
+ 
             className="relative flex flex-col gap-6"
           >
             
@@ -120,8 +131,10 @@ export default function About() {
             </div>
 
             {/* 2. Stats Grid (Already irundha Cards) */}
-            
-            <div className="grid grid-cols-2 gap-5">
+ 
+            className="relative"
+          >
+             <div className="grid grid-cols-2 gap-5">
               {/* Card 1 */}
               <motion.div
                 variants={cardVariants}
@@ -152,7 +165,8 @@ export default function About() {
 
  
               {/* Card 3 (Location) */}
-               {/* Card 3 */}
+ 
+              {/* Card 3 */}
                <motion.div
                 variants={cardVariants}
                 initial="hidden"
@@ -177,7 +191,8 @@ export default function About() {
             </div>
 
  
-             {/* Floating badge */}
+ 
+            {/* Floating badge */}
             <div className="absolute -top-5 -right-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-slate-100">
               <div className="flex items-center gap-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
@@ -191,5 +206,6 @@ export default function About() {
   );
  
 }
- }
+ 
+}
  
