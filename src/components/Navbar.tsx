@@ -59,7 +59,13 @@ export default function Navbar() {
   onClick={(e) => { e.preventDefault(); handleNav('#home'); }}
   className="flex items-center gap-2 group"
 >
-<img src={`${import.meta.env.BASE_URL}Logo.png`} alt="Astral Logo" className="w-14 h-15 object-contain" />
+  {/* 👇 Indha line-ah thaan maathirukken 👇 */}
+  <img 
+    src={`${import.meta.env.BASE_URL}Logo.png`} 
+    alt="Astral Logo" 
+    className="w-14 h-15 object-contain" 
+  />
+
   <div className="flex flex-col leading-tight">
     <span
       className={`text-4xl font-800 tracking-tight transition-colors duration-300 ${
