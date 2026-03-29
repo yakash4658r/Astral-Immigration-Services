@@ -61,10 +61,10 @@ export default function Navbar() {
 >
   {/* 👇 Indha line-ah thaan maathirukken 👇 */}
   <img 
-    src={`${import.meta.env.BASE_URL}Logo.png`} 
-    alt="Astral Logo" 
-    className="w-14 h-15 object-contain" 
-  />
+  src={`${import.meta.env.BASE_URL}Logo.png`}  // 👈 Ithu correct
+  alt="Astral Logo" 
+  className="w-14 h-15 object-contain" 
+/>
 
   <div className="flex flex-col leading-tight">
     <span
