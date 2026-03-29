@@ -53,38 +53,31 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
 
-          {/* ── Logo ── */}
-          <a
-            href="#home"
-            onClick={(e) => { e.preventDefault(); handleNav('#home'); }}
-            className="flex items-center gap-2 group"
-          >
- 
-          <img src="Logo.png" alt="Astral Logo" className="w-30 h-20 object-contain" />
-            <div className="flex flex-col leading-tight">
-              <span className={`text-4xl font-800 tracking-tight transition-colors duration-300 ${
- 
-            <div className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all duration-300 ${
-              scrolled ? 'bg-orange-500' : 'bg-orange-500/90'
-            } group-hover:scale-105`}>
-              <Globe className="w-5 h-5 text-white" strokeWidth={2} />
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className={`text-sm font-800 tracking-tight transition-colors duration-300 ${
-                 scrolled ? 'text-slate-900' : 'text-white'
-              }`}>
-                <span className="text-orange-500">Astral</span> Immigration
-              </span>
- 
-              <span className={`text-base font-500 tracking-widest uppercase transition-colors duration-300 ${
- 
-              <span className={`text-[10px] font-500 tracking-widest uppercase transition-colors duration-300 ${
-                 scrolled ? 'text-slate-500' : 'text-white/70'
-              }`}>
-                Services
-              </span>
-            </div>
-          </a>
+         {/* ── Logo ── */}
+<a
+  href="#home"
+  onClick={(e) => { e.preventDefault(); handleNav('#home'); }}
+  className="flex items-center gap-2 group"
+>
+ <img src="Logo.png" alt="Astral Logo" className="w-14 h-15 object-contain" />
+
+  <div className="flex flex-col leading-tight">
+    <span
+      className={`text-4xl font-800 tracking-tight transition-colors duration-300 ${
+        scrolled ? 'text-slate-900' : 'text-white'
+      }`}
+    >
+      <span className="text-orange-500">Astral</span> Immigration
+    </span>
+    <span
+      className={`text-base font-500 tracking-widest uppercase transition-colors duration-300 ${
+        scrolled ? 'text-slate-500' : 'text-white/70'
+      }`}
+    >
+      Services
+    </span>
+  </div>
+</a>
 
           {/* ── Desktop links ── */}
           <ul className="hidden md:flex items-center gap-1">

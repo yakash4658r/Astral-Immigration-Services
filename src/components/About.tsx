@@ -1,10 +1,7 @@
 /**
  * About Us Section
- 
  * - Two-column layout: text + image & decorative visual
- 
- * - Two-column layout: text + decorative visual
-  * - Framer Motion whileInView animations
+ * - Framer Motion whileInView animations
  */
 import { motion, type Variants } from 'framer-motion';
 import { MapPin, Award, Briefcase, CheckCircle2 } from 'lucide-react';
@@ -24,17 +21,13 @@ const cardVariants: Variants = {
 export default function About() {
   return (
     <section id="about" className="py-24 bg-white relative overflow-hidden">
-
       {/* ── Subtle bg shape ── */}
       <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-orange-500/5 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-slate-100 blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
- 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
- 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
- 
+          
           {/* ── Left: Text Content ── */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -42,22 +35,13 @@ export default function About() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
- 
-            <span className="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-orange-600 font-bold text-sm tracking-wide mb-4">
-              ABOUT US
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mt-3 mb-6">
-              Navigating Immigration<br />
-              <span className="text-orange-500">Made Simple for You</span>
-            </h2>
- 
             <span className="section-badge">About Us</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mt-3 mb-2">
               Navigating Immigration<br />
               <span className="gradient-text">Made Simple for You</span>
             </h2>
             <div className="orange-divider orange-divider-left mb-6" />
- 
+
             <p className="text-slate-600 text-lg leading-relaxed mb-6">
               Led by Proprietor{' '}
               <span className="font-bold text-slate-800">Nivedha Sajeev</span>, Astral Immigration
@@ -99,23 +83,18 @@ export default function About() {
             </div>
           </motion.div>
 
- 
           {/* ── Right: Image & Decorative card grid ── */}
- 
-          {/* ── Right: Decorative card grid ── */}
-           <motion.div
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, delay: 0.15 }}
- 
             className="relative flex flex-col gap-6"
           >
-            
-            {/* 1. Main About Image Section (Pudhusa Add Pannathu) */}
+            {/* 1. Main About Image Section */}
             <div className="relative w-full h-[300px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl group">
               <img 
-                src="public/images/about.jpg" 
+                src="images/about.jpg" 
                 alt="Astral Immigration Team" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -130,11 +109,8 @@ export default function About() {
               </div>
             </div>
 
-            {/* 2. Stats Grid (Already irundha Cards) */}
- 
-            className="relative"
-          >
-             <div className="grid grid-cols-2 gap-5">
+            {/* 2. Stats Grid */}
+            <div className="grid grid-cols-2 gap-5">
               {/* Card 1 */}
               <motion.div
                 variants={cardVariants}
@@ -163,11 +139,8 @@ export default function About() {
                 <p className="text-sm text-slate-400 mt-1 font-medium">Service Categories</p>
               </motion.div>
 
- 
               {/* Card 3 (Location) */}
- 
-              {/* Card 3 */}
-               <motion.div
+              <motion.div
                 variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -189,23 +162,10 @@ export default function About() {
                 </div>
               </motion.div>
             </div>
+          </motion.div>
 
- 
- 
-            {/* Floating badge */}
-            <div className="absolute -top-5 -right-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-slate-100">
-              <div className="flex items-center gap-2">
-                <div className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-xs font-bold text-slate-700">Available 24/7</span>
-              </div>
-            </div>
-           </motion.div>
         </div>
       </div>
     </section>
   );
- 
 }
- 
-}
- 

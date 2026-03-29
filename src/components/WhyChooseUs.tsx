@@ -1,63 +1,42 @@
-/**
- * Why Choose Us Section
- * - Icon-grid layout with subtle gradient background
- * - Framer Motion whileInView stagger
- */
 import { motion, type Variants } from 'framer-motion';
- 
-// Lucide icons theva illa ippo, aana vera edhavadhu use panna import vachikonga
-// import { Zap, BookOpen, HeartHandshake, Eye, LayoutGrid } from 'lucide-react';
-
-interface Reason {
-  image: string; // Icon-kku badhila image path add pannirukom
- 
 import { Zap, BookOpen, HeartHandshake, Eye, LayoutGrid } from 'lucide-react';
 
 interface Reason {
+  image: string; 
   icon: React.ReactNode;
-   title: string;
+  title: string;
   desc: string;
 }
 
 const reasons: Reason[] = [
   {
- 
-    image: 'images/reason1.png', // Fast Processing image
- 
-    icon: <Zap className="w-6 h-6" />,
-     title: 'Fast & Reliable Processing',
+    image: 'images/reason1.png', 
+    icon: <Zap className="w-2 h-3 " />,
+    title: 'Fast & Reliable Processing',
     desc: 'We prioritize speed without compromising accuracy. Your applications are handled with urgency and diligence.',
   },
   {
- 
-    image: 'images/reason2.png', // Documentation image
- 
+    image: 'images/reason2.jpg', 
     icon: <BookOpen className="w-6 h-6" />,
-     title: 'Expert Documentation Guidance',
+    title: 'Expert Documentation Guidance',
     desc: 'Our team ensures every document is perfectly prepared, reducing errors and rejection risks significantly.',
   },
   {
- 
-    image: 'images/reason3.png', // Support/Handshake image
- 
+    image: 'images/reason3.png', 
     icon: <HeartHandshake className="w-6 h-6" />,
-     title: 'Personalized Customer Support',
+    title: 'Personalized Customer Support',
     desc: 'We assign dedicated support for each client — you are never just a ticket number to us.',
   },
   {
- 
-    image: 'images/reason4.png', // Transparency/Trust image
- 
+    image: 'images/reason4.png', 
     icon: <Eye className="w-6 h-6" />,
-     title: 'Transparent & Trustworthy',
+    title: 'Transparent & Trustworthy',
     desc: 'No hidden fees. No false promises. We maintain complete transparency throughout the process.',
   },
   {
- 
-    image: 'images/reason5.png', // Compliance/Grid image
- 
-    icon: <LayoutGrid className="w-6 h-6" />,
-     title: 'One-Stop Compliance Solution',
+    image: 'images/reason5.png', 
+    icon: <LayoutGrid className="w-10 h-6" />,
+    title: 'One-Stop Compliance Solution',
     desc: 'From visas to tax filings and legal documentation — handle everything in one trusted place.',
   },
 ];
@@ -76,29 +55,16 @@ function ReasonCard({ reason, index }: { reason: Reason; index: number }) {
       }}
       className="group relative bg-slate-50 hover:bg-white rounded-2xl p-7 border border-transparent hover:border-orange-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
     >
-      {/* Glow on hover */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
- 
-      {/* ── UPDATED IMAGE CONTAINER (Bigger Size & Zoomed Image) ── */}
       <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-6 overflow-hidden relative group-hover:border-orange-300 group-hover:shadow-md transition-all duration-300 z-10">
         <img 
           src={reason.image} 
           alt={reason.title} 
-          // scale-125 use pannathala extra white space cut aagi image perusa theriyum
           className="w-full h-full object-cover scale-125 group-hover:scale-150 transition-transform duration-500"
         />
       </div>
 
-      {/* Background number */}
-      <span className="absolute top-5 right-6 text-5xl font-extrabold text-slate-100 group-hover:text-orange-50 transition-colors duration-300 select-none leading-none z-0">
- 
-      {/* Icon */}
-      <div className="w-12 h-12 rounded-xl bg-white group-hover:bg-orange-500 border border-slate-200 group-hover:border-orange-500 shadow-sm flex items-center justify-center text-slate-500 group-hover:text-white transition-all duration-300 mb-5">
-        {reason.icon}
-      </div>
-
-      {/* Background number */}
       <span className="absolute top-5 right-6 text-5xl font-extrabold text-slate-100 group-hover:text-orange-50 transition-colors duration-300 select-none leading-none">
          {String(index + 1).padStart(2, '0')}
       </span>
@@ -112,13 +78,9 @@ function ReasonCard({ reason, index }: { reason: Reason; index: number }) {
 export default function WhyChooseUs() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
-
-      {/* ── Decorative blob ── */}
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-orange-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* ── Header ── */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -136,7 +98,6 @@ export default function WhyChooseUs() {
           </p>
         </motion.div>
 
-        {/* ── Row 1: 3 cards ── */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -149,7 +110,6 @@ export default function WhyChooseUs() {
           ))}
         </motion.div>
 
-        {/* ── Row 2: 2 cards centered ── */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -164,8 +124,4 @@ export default function WhyChooseUs() {
       </div>
     </section>
   );
- 
 }
- 
-}
- 
