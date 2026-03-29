@@ -13,40 +13,34 @@ const testimonials = [
     role: 'Business Owner, Chennai',
     quote: 'Astral Immigration helped us get our export license done within days. Exceptional service and very transparent throughout.',
     stars: 5,
-<<<<<<< HEAD
+ 
     // Pudhusa image path add pannirukkom
     image: 'images/client1.jpg', 
-=======
-    initials: 'RK',
+     initials: 'RK',
     bg: 'from-orange-400 to-orange-600',
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+   },
   {
     name: 'Priya Chandran',
     role: 'IT Professional',
     quote: 'FRRO registration was completely stress-free. Nivedha and her team guided me at every step. Highly recommend!',
     stars: 5,
-<<<<<<< HEAD
+ 
     // Pudhusa image path add pannirukkom
     image: 'images/client2.jpg', 
-=======
-    initials: 'PC',
+     initials: 'PC',
     bg: 'from-slate-600 to-slate-800',
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+   },
   {
     name: 'Arjun Mehta',
     role: 'Student Visa Applicant',
     quote: 'Got my student visa processed without a single mistake. The documentation guidance was perfect. Thank you, Astral!',
     stars: 5,
-<<<<<<< HEAD
+ 
     // Pudhusa image path add pannirukkom
     image: 'images/client3.jpg', 
-=======
-    initials: 'AM',
+     initials: 'AM',
     bg: 'from-amber-500 to-orange-500',
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+   },
 ];
 
 const cardVariants: Variants = {
@@ -118,7 +112,7 @@ export default function TrustBanner() {
 
               {/* Author */}
               <div className="flex items-center gap-3">
-<<<<<<< HEAD
+ 
                 
                 {/* INGU THAN IMAGE UPDATE PANNIRUKEN */}
                 <img 
@@ -127,12 +121,10 @@ export default function TrustBanner() {
                   className="w-11 h-11 rounded-full object-cover shrink-0 border-2 border-orange-100 shadow-sm"
                 />
                 
-=======
-                <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.bg} flex items-center justify-center text-white text-sm font-bold shrink-0`}>
+                 <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.bg} flex items-center justify-center text-white text-sm font-bold shrink-0`}>
                   {t.initials}
                 </div>
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-                <div>
+                 <div>
                   <p className="font-bold text-slate-900 text-sm">{t.name}</p>
                   <p className="text-slate-400 text-xs">{t.role}</p>
                 </div>
@@ -167,8 +159,7 @@ export default function TrustBanner() {
       </div>
     </section>
   );
-<<<<<<< HEAD
+ 
 }
-=======
-}
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
+ }
+ 

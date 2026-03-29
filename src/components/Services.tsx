@@ -1,11 +1,9 @@
 /**
  * Services Section
-<<<<<<< HEAD
+ 
  * - Premium CSS Grid cards with hover lift + conditionally rendered images
-=======
- * - Premium CSS Grid cards with hover lift + icon color transition
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
- * - Framer Motion stagger animation
+  * - Premium CSS Grid cards with hover lift + icon color transition
+  * - Framer Motion stagger animation
  */
 import { motion, type Variants } from 'framer-motion';
 import {
@@ -20,11 +18,9 @@ interface Service {
   items: string[];
   color: string;
   bg: string;
-<<<<<<< HEAD
+ 
   image?: string; // புதுசா இமேஜ் ஆட் பண்ணிருக்கோம்
-=======
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-}
+  }
 
 const services: Service[] = [
   {
@@ -34,11 +30,9 @@ const services: Service[] = [
     items: ['Inbound Visa Assistance', 'Outbound Visa Assistance', 'Tourist & Business Visas', 'Long-Stay Visa Support'],
     color: 'text-sky-600',
     bg: 'bg-sky-50',
-<<<<<<< HEAD
+ 
     image: 'public/images/visa.jpg' // Image 1
-=======
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+    },
   {
     icon: <UserCheck className="w-7 h-7" />,
     category: 'FRRO & Expat',
@@ -46,11 +40,9 @@ const services: Service[] = [
     items: ['FRRO Registration', 'Visa Renewal for Expats', 'Change of Address Update', 'Passport Details Update'],
     color: 'text-violet-600',
     bg: 'bg-violet-50',
-<<<<<<< HEAD
+ 
     image: 'public/images/frro.jpg' // Image 2
-=======
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+    },
   {
     icon: <CreditCard className="w-7 h-7" />,
     category: 'Passport & ID',
@@ -58,11 +50,9 @@ const services: Service[] = [
     items: ['Passport New Application', 'Passport Renewal', 'PAN Card (New & Correction)', 'Aadhaar Card Update'],
     color: 'text-emerald-600',
     bg: 'bg-emerald-50',
-<<<<<<< HEAD
+ 
     image: 'public/images/passport.jpg' // Image 3
-=======
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+    },
   {
     icon: <Building2 className="w-7 h-7" />,
     category: 'Business & Tax',
@@ -70,11 +60,9 @@ const services: Service[] = [
     items: ['GST Registration', 'GST Monthly Filing', 'Income Tax Filing', 'TDS Returns & Refunds'],
     color: 'text-amber-600',
     bg: 'bg-amber-50',
-<<<<<<< HEAD
+ 
     image: 'public/images/Business & Tax.jpg' // Image 4 (Placeholder, can be updated with a more relevant image)
-=======
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+    },
   {
     icon: <Truck className="w-7 h-7" />,
     category: 'Import / Export',
@@ -82,11 +70,9 @@ const services: Service[] = [
     items: ['IEC Registration', 'Export License Assistance', 'C Form Support', 'Trade Documentation'],
     color: 'text-blue-600',
     bg: 'bg-blue-50',
-<<<<<<< HEAD
+ 
     image: 'public/images/Import&Export.jpg'  // Image 5
-=======
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+    },
   {
     icon: <Scale className="w-7 h-7" />,
     category: 'Legal',
@@ -94,11 +80,9 @@ const services: Service[] = [
     items: ['Affidavit Preparation', 'Notary Services', 'Document Attestation', 'Legal Document Support'],
     color: 'text-rose-600',
     bg: 'bg-rose-50',
-<<<<<<< HEAD
+ 
     image: 'public/images/Legal & Notary Services.jpg'  // Image 6
-=======
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-  },
+    },
 ];
 
 const containerVariants: Variants = {
@@ -132,12 +116,10 @@ export default function Services() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-3">
             Our Comprehensive <span className="gradient-text">Services</span>
           </h2>
-<<<<<<< HEAD
+ 
           <div className="orange-divider mx-auto" />
-=======
-          <div className="orange-divider" />
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-          <p className="text-slate-500 max-w-2xl mx-auto mt-5 text-lg">
+           <div className="orange-divider" />
+           <p className="text-slate-500 max-w-2xl mx-auto mt-5 text-lg">
             From visa assistance to business compliance — we handle it all under one roof,
             with expert care and precision.
           </p>
@@ -149,17 +131,15 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-50px' }}
-<<<<<<< HEAD
+ 
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 items-start"
-=======
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7"
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-        >
+           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7"
+         >
           {services.map((svc, i) => (
             <motion.div
               key={i}
               variants={cardVariants}
-<<<<<<< HEAD
+ 
               className="card-shine group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-350 cursor-default overflow-hidden flex flex-col h-full"
             >
               {/* Image Section (Only renders if image exists in the array) */}
@@ -207,8 +187,7 @@ export default function Services() {
                 {/* Bottom accent line */}
                 <div className="mt-auto h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-orange-500 to-orange-300 rounded-full transition-all duration-500" />
               </div>
-=======
-              className="card-shine group bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-350 cursor-default"
+               className="card-shine group bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-350 cursor-default"
             >
               {/* Icon */}
               <div className={`w-14 h-14 rounded-2xl ${svc.bg} flex items-center justify-center mb-5 transition-all duration-300 group-hover:bg-orange-100`}>
@@ -239,8 +218,7 @@ export default function Services() {
 
               {/* Bottom accent line */}
               <div className="mt-6 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-orange-500 to-orange-300 rounded-full transition-all duration-500" />
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
-            </motion.div>
+             </motion.div>
           ))}
         </motion.div>
 
@@ -272,8 +250,7 @@ export default function Services() {
       </div>
     </section>
   );
-<<<<<<< HEAD
+ 
 }
-=======
-}
->>>>>>> ec746734adc4554fca8f52a78d1505292564987b
+ }
+ 
