@@ -1,32 +1,15 @@
- 
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ main ] # Unga branch name 'master' ah irundha, idha 'master' nu mathikonga
- 
 name: Deploy React Vite to GitHub Pages
 
 on:
   push:
-    branches: ['main'] # unga branch name 'master' ah irundha, idha 'master' nu mathikonga
-   workflow_dispatch:
+    branches: ['main'] 
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
- 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
- 
 concurrency:
   group: 'pages'
   cancel-in-progress: true
@@ -42,40 +25,19 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node.js
-         uses: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
 
- 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build project
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist' # Vite build aagura folder name idhudhan
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
- 
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
-        run: npm run build
+      # Ithu thaan permission error varama thadukkum
+      - name: Fix Vite Permissions and Build Project
+        run: |
+          chmod +x node_modules/.bin/vite
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -83,9 +45,8 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Vite build folder idhuthaan
+          path: './dist' 
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
- 
