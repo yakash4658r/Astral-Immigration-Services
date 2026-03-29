@@ -94,7 +94,8 @@ export default function About() {
             {/* 1. Main About Image Section */}
             <div className="relative w-full h-[300px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl group">
               <img 
-                src="images/about.jpg" 
+                      src={`${import.meta.env.BASE_URL}images/about.jpg`} 
+
                 alt="Astral Immigration Team" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

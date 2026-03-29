@@ -8,33 +8,34 @@ interface Reason {
   desc: string;
 }
 
-const reasons: Reason[] = [
+const reasons: Reason[] = 
+[
   {
-    image: 'images/reason1.png', 
+    image: `${import.meta.env.BASE_URL}images/reason1.png`, 
     icon: <Zap className="w-2 h-3 " />,
     title: 'Fast & Reliable Processing',
-    desc: 'We prioritize speed without compromising accuracy. Your applications are handled with urgency and diligence.',
+    desc: 'We prioritize speed without compromising accuracy...',
   },
   {
-    image: 'images/reason2.jpg', 
+    image: `${import.meta.env.BASE_URL}images/reason2.jpg`, 
     icon: <BookOpen className="w-6 h-6" />,
     title: 'Expert Documentation Guidance',
     desc: 'Our team ensures every document is perfectly prepared, reducing errors and rejection risks significantly.',
   },
   {
-    image: 'images/reason3.png', 
+    image: `${import.meta.env.BASE_URL}images/reason3.png`, 
     icon: <HeartHandshake className="w-6 h-6" />,
     title: 'Personalized Customer Support',
     desc: 'We assign dedicated support for each client — you are never just a ticket number to us.',
   },
   {
-    image: 'images/reason4.png', 
+    image: `${import.meta.env.BASE_URL}images/reason4.png`, 
     icon: <Eye className="w-6 h-6" />,
     title: 'Transparent & Trustworthy',
     desc: 'No hidden fees. No false promises. We maintain complete transparency throughout the process.',
   },
   {
-    image: 'images/reason5.png', 
+    image: `${import.meta.env.BASE_URL}images/reason5.png`, 
     icon: <LayoutGrid className="w-10 h-6" />,
     title: 'One-Stop Compliance Solution',
     desc: 'From visas to tax filings and legal documentation — handle everything in one trusted place.',

@@ -15,7 +15,7 @@ const testimonials = [
     stars: 5,
  
     // Pudhusa image path add pannirukkom
-    image: 'images/client1.jpg', 
+image: `${import.meta.env.BASE_URL}images/client1.jpg`,
  
     initials: 'RK',
     bg: 'from-orange-400 to-orange-600',
@@ -27,7 +27,7 @@ const testimonials = [
     stars: 5,
  
     // Pudhusa image path add pannirukkom
-    image: 'images/client2.jpg', 
+    image: `${import.meta.env.BASE_URL}images/client2.jpg`, 
  
     initials: 'PC',
     bg: 'from-slate-600 to-slate-800',
@@ -39,7 +39,7 @@ const testimonials = [
     stars: 5,
  
     // Pudhusa image path add pannirukkom
-    image: 'images/client3.jpg', 
+    image: `${import.meta.env.BASE_URL}images/client3.jpg`, 
  
     initials: 'AM',
     bg: 'from-amber-500 to-orange-500',

@@ -30,8 +30,7 @@
       items: ['Inbound Visa Assistance', 'Outbound Visa Assistance', 'Tourist & Business Visas', 'Long-Stay Visa Support'],
       color: 'text-sky-600',
       bg: 'bg-sky-50',
-      image: 'public/images/visa.jpg' // Image 1
-  
+      image: `${import.meta.env.BASE_URL}images/visa.jpg` // ✅ Fixed: Removed 'public/' and added BASE_URL
     },
     {
       icon: <UserCheck className="w-7 h-7" />,
@@ -40,8 +39,7 @@
       items: ['FRRO Registration', 'Visa Renewal for Expats', 'Change of Address Update', 'Passport Details Update'],
       color: 'text-violet-600',
       bg: 'bg-violet-50',
-      image: 'public/images/frro.jpg' // Image 2
-  
+      image: `${import.meta.env.BASE_URL}images/frro.jpg` 
     },
     {
       icon: <CreditCard className="w-7 h-7" />,
@@ -50,8 +48,7 @@
       items: ['Passport New Application', 'Passport Renewal', 'PAN Card (New & Correction)', 'Aadhaar Card Update'],
       color: 'text-emerald-600',
       bg: 'bg-emerald-50',
-      image: 'public/images/passport.jpg' // Image 3
-  
+      image: `${import.meta.env.BASE_URL}images/passport.jpg` 
     },
     {
       icon: <Building2 className="w-7 h-7" />,
@@ -60,8 +57,7 @@
       items: ['GST Registration', 'GST Monthly Filing', 'Income Tax Filing', 'TDS Returns & Refunds'],
       color: 'text-amber-600',
       bg: 'bg-amber-50',
-      image: 'public/images/Business & Tax.jpg' // Image 4 (Placeholder, can be updated with a more relevant image)
-  
+      image: `${import.meta.env.BASE_URL}images/Business & Tax.jpg` 
     },
     {
       icon: <Truck className="w-7 h-7" />,
@@ -70,8 +66,7 @@
       items: ['IEC Registration', 'Export License Assistance', 'C Form Support', 'Trade Documentation'],
       color: 'text-blue-600',
       bg: 'bg-blue-50',
-      image: 'public/images/Import&Export.jpg'  // Image 5
-  
+      image: `${import.meta.env.BASE_URL}images/Import&Export.jpg`  
     },
     {
       icon: <Scale className="w-7 h-7" />,
@@ -80,10 +75,9 @@
       items: ['Affidavit Preparation', 'Notary Services', 'Document Attestation', 'Legal Document Support'],
       color: 'text-rose-600',
       bg: 'bg-rose-50',
-      image: 'public/images/Legal & Notary Services.jpg'  // Image 6
-  
+      image: `${import.meta.env.BASE_URL}images/Legal & Notary Services.jpg` 
     },
-  ];
+];
 
   const containerVariants: Variants = {
     hidden: {},
