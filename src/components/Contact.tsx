@@ -55,15 +55,15 @@ const contactCards = [
   {
     icon: <Phone className="w-6 h-6" />,
     label: 'Phone',
-    lines: ['+91 80725 16152', '+91 99403 00857'],
+    lines: ['+91 80725 16152', '+91 99403 00857', '+91 7200060857'],
     link: 'tel:8072516152',
     linkText: 'Call Now',
   },
   {
     icon: <Mail className="w-6 h-6" />,
     label: 'Email',
-    lines: ['Astral21f@gmail.com'],
-    link: 'mailto:Astral21f@gmail.com',
+    lines: ['info.astralimmigration@gmail.com'],
+    link: 'mailto:info.astralimmigration@gmail.com',
     linkText: 'Send Email',
   },
   {
@@ -181,11 +181,18 @@ export default function Contact() {
                   Call: +91 99403 00857
                 </a>
                 <a
-                  href="mailto:Astral21f@gmail.com"
+                  href="tel:7200060857"
+                  className="flex items-center gap-3 w-full px-4 py-3 bg-white/10 hover:bg-white/15 rounded-xl text-white font-medium text-sm transition-all duration-300 border border-white/10"
+                >
+                  <Phone className="w-4 h-4 text-orange-400" />
+                  Call: +91 72000 60857
+                </a>
+                <a
+                  href="mailto:info.astralimmigration@gmail.com"
                   className="flex items-center gap-3 w-full px-4 py-3 bg-white/10 hover:bg-white/15 rounded-xl text-white font-medium text-sm transition-all duration-300 border border-white/10"
                 >
                   <Mail className="w-4 h-4 text-orange-400" />
-                  Astral21f@gmail.com
+                  info.astralimmigration@gmail.com
                 </a>
               </div>
 
@@ -229,7 +236,7 @@ export default function Contact() {
                   <p className="text-white font-extrabold text-sm leading-tight">
                     <span className="text-orange-500">Astral</span> Immigration Services
                   </p>
-                  <p className="text-xs text-slate-500 tracking-widest uppercase">Proprietor: Nivedha Sajeev</p>
+                  
                 </div>
               </div>
               <p className="text-sm leading-relaxed max-w-xs mb-5">
@@ -289,9 +296,15 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:Astral21f@gmail.com" className="flex items-center gap-2.5 text-sm hover:text-orange-400 transition-colors duration-200 break-all">
+                  <a href="tel:7200060857" className="flex items-center gap-2.5 text-sm hover:text-orange-400 transition-colors duration-200">
+                    <Phone className="w-4 h-4 text-orange-500 shrink-0" />
+                    +91 72000 60857
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info.astralimmigration@gmail.com" className="flex items-center gap-2.5 text-sm hover:text-orange-400 transition-colors duration-200 break-all">
                     <Mail className="w-4 h-4 text-orange-500 shrink-0" />
-                    Astral21f@gmail.com
+                    info.astralimmigration@gmail.com
                   </a>
                 </li>
               </ul>

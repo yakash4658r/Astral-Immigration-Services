@@ -43,8 +43,8 @@ export default function About() {
             <div className="orange-divider orange-divider-left mb-6" />
 
             <p className="text-slate-600 text-lg leading-relaxed mb-6">
-              Led by Proprietor{' '}
-              <span className="font-bold text-slate-800">Nivedha Sajeev</span>, Astral Immigration
+              
+              <span className="font-bold text-slate-800"></span>Astral Immigration
               Services offers end-to-end solutions for both inbound and outbound visa services,
               ensuring a smooth and hassle-free experience for our clients.
             </p>
@@ -71,16 +71,7 @@ export default function About() {
               ))}
             </ul>
 
-            {/* Proprietor tag */}
-            <div className="inline-flex items-center gap-3 px-5 py-3 bg-orange-50 rounded-xl border border-orange-100">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white font-bold text-base shrink-0">
-                NS
-              </div>
-              <div>
-                <p className="font-bold text-slate-900 text-sm">Nivedha Sajeev</p>
-                <p className="text-slate-500 text-xs">Proprietor, Astral Immigration Services</p>
-              </div>
-            </div>
+           
           </motion.div>
 
           {/* ── Right: Image & Decorative card grid ── */}
