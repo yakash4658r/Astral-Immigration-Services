@@ -37,7 +37,7 @@ export default function App() {
         <About />
         <Services />
         <WhyChooseUs />
-        <TrustBanner />
+        {/* <TrustBanner /> */}
         <HowItWorks />
         <Contact />
       </main>
