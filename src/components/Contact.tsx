@@ -44,19 +44,19 @@ const contactCards = [
     icon: <MapPin className="w-6 h-6" />,
     label: 'Our Office',
     lines: [
-      'Ground Floor, No. 8B, Flat F,',
-      'V V Colony, 1st Cross Street,',
-      'Velachery West, Velachery,',
+      'Ground Floor, Flat No. 8B,',
+      'V V Colony, Cross Street,',
+      'Adambakkam,',
       'Chennai – 600088',
     ],
-    link: 'https://maps.google.com/?q=Velachery,Chennai',
+    link: 'https://maps.google.com/?q=Adambakkam,Chennai',
     linkText: 'View on Maps',
   },
   {
     icon: <Phone className="w-6 h-6" />,
     label: 'Phone',
     lines: ['+91 80725 16152', '+91 99403 00857', '+91 7200060857'],
-    link: 'tel:8072516152',
+    link: 'tel:7200060857',
     linkText: 'Call Now',
   },
   {
@@ -70,7 +70,7 @@ const contactCards = [
     icon: <Globe className="w-6 h-6" />,
     label: 'Working Hours',
     lines: ['Mon – Sat: 9:00 AM – 7:00 PM', 'Sunday: By Appointment'],
-    link: 'tel:8072516152',
+    link: 'tel:7200060857',
     linkText: 'Schedule a Call',
   },
 ];
@@ -173,13 +173,15 @@ export default function Contact() {
                   <Phone className="w-4 h-4" />
                   Call: +91 80725 16152
                 </a>
-                <a
-                  href="tel:9940300857"
-                  className="flex items-center gap-3 w-full px-4 py-3 bg-white/10 hover:bg-white/15 rounded-xl text-white font-medium text-sm transition-all duration-300 border border-white/10"
-                >
-                  <Phone className="w-4 h-4 text-orange-400" />
-                  Call: +91 99403 00857
-                </a>
+               <a
+  href="https://wa.me/919940300857"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-3 w-full px-4 py-3 bg-white/10 hover:bg-white/15 rounded-xl text-white font-medium text-sm transition-all duration-300 border border-white/10"
+>
+  <Phone className="w-4 h-4 text-orange-400" />
+  WhatsApp: +91 99403 00857
+</a>
                 <a
                   href="tel:7200060857"
                   className="flex items-center gap-3 w-full px-4 py-3 bg-white/10 hover:bg-white/15 rounded-xl text-white font-medium text-sm transition-all duration-300 border border-white/10"
@@ -281,7 +283,7 @@ export default function Contact() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-2.5 text-sm">
                   <MapPin className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
-                  <span>Ground Floor, No. 8B, Flat F, V V Colony, 1st Cross St, Velachery, Chennai – 600088</span>
+                  <span>Ground Floor, Flat No. 8B, V V Colony,Cross Street, Adambakkam, Chennai – 600088</span>
                 </li>
                 <li>
                   <a href="tel:8072516152" className="flex items-center gap-2.5 text-sm hover:text-orange-400 transition-colors duration-200">

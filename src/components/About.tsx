@@ -147,8 +147,8 @@ export default function About() {
                   <div>
                     <p className="font-bold text-slate-900 mb-0.5">Our Location</p>
                     <p className="text-slate-500 text-sm leading-relaxed">
-                      Ground Floor, No. 8B, Flat F, V V Colony,<br />
-                      1st Cross Street, Velachery, Chennai – 600088
+                      Ground Floor, Flat No. 8B, V V Colony,<br />
+                      Cross Street, Adambakkam, Chennai – 600088
                     </p>
                   </div>
                 </div>
