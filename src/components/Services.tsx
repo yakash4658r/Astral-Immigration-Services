@@ -30,7 +30,7 @@
       items: ['Inbound Visa Assistance', 'Outbound Visa Assistance', 'Tourist & Business Visas', 'Long-Stay Visa Support'],
       color: 'text-sky-600',
       bg: 'bg-sky-50',
-      image: `${import.meta.env.BASE_URL}images/visa.jpg` // ✅ Fixed: Removed 'public/' and added BASE_URL
+      image: `${import.meta.env.BASE_URL}images/visa-new.jpg` // ✅ Fixed: Removed 'public/' and added BASE_URL
     },
     {
       icon: <UserCheck className="w-7 h-7" />,
