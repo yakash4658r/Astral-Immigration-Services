@@ -314,13 +314,32 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* ── Bottom bar ── */}
+                {/* ── Bottom bar ── */}
         <div className="border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
-            <p>&copy; {new Date().getFullYear()} Astral Immigration Services. All Rights Reserved.</p>
+            
+            {/* Left Side: Copyright & Credits */}
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1">
+              <span>&copy; {new Date().getFullYear()} All Rights Reserved</span>
+              <span className="hidden sm:inline-block mx-1.5 text-slate-700">|</span>
+              <span>
+                Powered by{' '}
+                <a 
+                  href="https://critictech.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 font-semibold tracking-wider hover:text-cyan-300 transition-colors duration-300"
+                >
+                  CRITIC TECH
+                </a>
+              </span>
+            </div>
+
+            {/* Right Side: Crafted with love */}
             <p className="flex items-center gap-1">
               Crafted with <span className="text-orange-500 mx-1">&#9829;</span> in Chennai, India
             </p>
+
           </div>
         </div>
       </footer>
