@@ -10,7 +10,7 @@ const highlights = [
   { icon: <CheckCircle2 className="w-5 h-5 text-orange-500" />, text: 'Inbound & Outbound Visa Specialists' },
   { icon: <CheckCircle2 className="w-5 h-5 text-orange-500" />, text: 'End-to-End Government Documentation' },
   { icon: <CheckCircle2 className="w-5 h-5 text-orange-500" />, text: 'Serving Individuals, Families & Businesses' },
-  { icon: <CheckCircle2 className="w-5 h-5 text-orange-500" />, text: 'Based in Velachery, Chennai' },
+  { icon: <CheckCircle2 className="w-5 h-5 text-orange-500" />, text: 'Based in Adambakkam, Chennai' },
 ];
 
 const cardVariants: Variants = {
